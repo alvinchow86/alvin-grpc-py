@@ -1,0 +1,5 @@
+[run]
+omit =
+  alvinchow/grpc/version.py
+  alvinchow/grpc/tests/*
+  alvinchow/grpc/protobuf/*

@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package alvinchow;
+
+message ErrorInfo {
+  string code = 1;
+}
+
+// based off of the Google version https://github.com/googleapis/googleapis/blob/master/google/rpc/error_details.proto
+// but add a code. also rename description to message for consistency
+message BadRequest {
+  // A message type used to describe a single bad request field.
+  message FieldError {
+    // A path leading to a field in the request body
+    string field = 1;
+
+    // A description of why the request element is bad.
+    string message = 2;
+
+    // Internal enum code for why the request element is bad
+    string code = 3;
+  }
+
+  // Describes all errors in a client request.
+  repeated FieldError field_errors = 1;
+}

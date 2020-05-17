@@ -1,0 +1,29 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[[source]]
+name = "fury"
+url = "https://pypi.fury.io/alvinchow86"
+verify_ssl = true
+
+[dev-packages]
+flake8 = "~=3.8.0"
+pytest = "~=4.0"
+pytest-mock = "~=3.0"
+tox = "~=3.6"
+pytest-cov = "~=2.8"
+
+[packages]
+python-dateutil = ">=2.7"
+Cython = ">=0.29.6"
+grpcio = ">=1.22"
+grpcio-tools = ">=1.22"
+grpcio-status = ">=1.22"
+protobuf = ">=3.6.1"
+alvin-python-lib = ">=0.0.2"
+protobuf-serialization = ">=0.1.1"
+
+[requires]
+python_version = "3.8"

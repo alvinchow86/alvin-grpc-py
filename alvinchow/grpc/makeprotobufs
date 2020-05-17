@@ -1,0 +1,8 @@
+#!/bin/bash
+cd $(dirname $0)
+python -m grpc_tools.protoc -I protobuf/src --python_out=. --grpc_python_out=. protobuf/src/alvinchow/*.proto
+
+# Generated files are in a "alvinchow" directory
+mv alvinchow/*.py protobuf
+
+rm -rf alvinchow
