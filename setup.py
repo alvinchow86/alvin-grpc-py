@@ -5,7 +5,7 @@ __version__ = None
 exec(open('alvinchow/grpc/version.py').read())
 
 setup(
-    name='alvinchow-grpc-lib',
+    name='alvin-grpc-lib',
     version=__version__,
     description="gRPC Python library",
     packages=[
